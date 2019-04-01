@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Social Network - Share buttons</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .share-buttons-list {
+        width: 100%;
+        margin-top: 2%;
+        overflow: none;
+      }
+
+      ul {
+        text-align: center;
+        list-style-type: none;
+      }
+      ul li {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: bolder;
+      }
+      ul li a {
+        display: block;
+        padding: 8px;
+        border-radius: 3px;
+        transition: 0.3s ease;
+      }
+      #share-btn-facebook {
+        background-color: #3b5998;
+        filter: brightness(90%);
+      }
+      #share-btn-twitter {
+        background-color: #1da1f2;
+        filter: brightness(80%);
+      }
+      #share-btn-linkedin {
+        background-color: #007bb5;
+        filter: brightness(80%);
+      }
+      #share-btn-googleplus {
+        background-color: #db4437;
+        filter: brightness(80%);
+      }
+
+      #share-btn-facebook:hover,
+      #share-btn-twitter:hover,
+      #share-btn-linkedin:hover,
+      #share-btn-googleplus:hover {
+        filter: brightness(120%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML/CSS & JS : Social Network share buttons</h1>
+      <div class="share-buttons-list">
+        <ul>
+          <li>
+            <a class="share-btn" id="share-btn-facebook" href="">
+              FACEBOOK
+            </a>
+          </li>
+          <li>
+            <a class="share-btn" id="share-btn-twitter" href="">TWITTER </a>
+          </li>
+          <li>
+            <a class="share-btn" id="share-btn-linkedin" href="">
+              LINKENDIN
+            </a>
+          </li>
+          <li>
+            <a class="share-btn" id="share-btn-googleplus" href="">
+              GOOGLE+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="shareButton.js"></script>
+  </body>
+</html>
